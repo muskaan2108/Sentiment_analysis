@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  
+  <meta charset="UTF-8">
+  <title>NLP API</title>
+ 
+</head>
+
+<body  style="background-color:rgb(17, 15, 17);"  >
+ <div class="Reviews_submission" >
+ 
+  
+	<h1 style="color:rgb(231, 243, 242);">Netflix Seniment Analysis</h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}} "method="Post">
+    	<input type="text" name="Review", placeholder="write Review here" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Analysis</button>
+    </form>
+ 
+   <br>
+   <br>
+   <p style="color:beige;">
+   {{prediction_text}}</p>
+  
+ </div>
+
+
+</body>
+</html>
