@@ -1,0 +1,4 @@
+This is a app that captures your sentiments that you submit as your review .It will tell you that the sentiments are positive  or negative.
+app is deployed on heroku
+You can access this:
+                                        https://sentiment-analysis-pos-neg.herokuapp.com/
